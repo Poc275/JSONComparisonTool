@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>GB Config Comparison Tool</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>GB Config Comparison Tool</h1>
+        <p class="lead">
+            This tool enables users to compare two ground based config JSON files and visualise the differences.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Config A -->
+            <div class="col-sm-6">
+                <h2>Config A</h2>
+                <div class="form-group row">
+                    <label for="config-a-p-one" class="col-sm-1 col-form-label">P1</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-a-p-one">
+                        <div class="invalid-msg" id="config-a-p-one-msg">Please provide a file.</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="config-a-p-two" class="col-sm-1 col-form-label">P2</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-a-p-two">
+                        <div class="invalid-msg" id="config-a-p-two-msg">Please provide a file.</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="config-a-p-three" class="col-sm-1 col-form-label">P3</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-a-p-three">
+                        <div class="invalid-msg" id="config-a-p-three-msg">Please provide a file.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Config B -->
+            <div class="col-sm-6">
+                <h2>Config B</h2>
+                <div class="form-group row">
+                    <label for="config-b-p-one" class="col-sm-1 col-form-label">P1</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-b-p-one">
+                        <div class="invalid-msg" id="config-b-p-one-msg">Please provide a file.</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="config-b-p-two" class="col-sm-1 col-form-label">P2</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-b-p-two">
+                        <div class="invalid-msg" id="config-b-p-two-msg">Please provide a file.</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="config-b-p-three" class="col-sm-1 col-form-label">P3</label>
+                    <div class="col-sm-11">
+                        <input type="file" class="form-control" id="config-b-p-three">
+                        <div class="invalid-msg" id="config-b-p-three-msg">Please provide a file.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-1">
+                <button type="button" class="btn btn-primary btn-lg" id="btn-compare">Compare</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- libs -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Project JS files -->
+    <script src="js/FileLoader.js"></script>
+    <script src="js/Validator.js"></script>
+    <script src="js/App.js"></script>
+</body>
+</html>

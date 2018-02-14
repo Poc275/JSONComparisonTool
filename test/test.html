@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Test Runner</title>
+  <link rel="stylesheet" href="qunit-2.5.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+    <!-- Minimum UI for tests to work -->
+    <form id="compare-form" novalidate>
+        <!-- Config A File Inputs -->
+        <input type="file" id="config-a-p-one">
+        <input type="file" id="config-a-p-two">
+        <input type="file" id="config-a-p-three">
+
+        <!-- Config A Validation Messages -->
+        <div class="invalid-msg" id="config-a-p-one-msg">Please provide a file.</div>
+        <div class="invalid-msg" id="config-a-p-two-msg">Please provide a file.</div>
+        <div class="invalid-msg" id="config-a-p-three-msg">Please provide a file.</div>
+
+        <!-- Config B File Inputs -->
+        <input type="file" id="config-b-p-one">
+        <input type="file" id="config-b-p-two">
+        <input type="file" id="config-b-p-three">
+
+        <!-- Config B Validation Messages -->
+        <div class="invalid-msg" id="config-b-p-one-msg">Please provide a file.</div>
+        <div class="invalid-msg" id="config-b-p-two-msg">Please provide a file.</div>
+        <div class="invalid-msg" id="config-b-p-three-msg">Please provide a file.</div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="btn-compare">Compare</button>
+    </form>
+  </div>
+
+  <script src="qunit-2.5.0.js"></script>
+  <script src="tests.js"></script>
+
+  <!-- Project JS files -->
+  <script src="../js/FileLoader.js"></script>
+  <script src="../js/Validator.js"></script>
+  <script src="../js/App.js"></script>
+
+</body>
+</html>
